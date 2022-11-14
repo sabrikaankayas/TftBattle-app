@@ -8,31 +8,33 @@ import Denemece2 from "../denemeceler/denemece2/Denemece2"
 
 export default function Details() { 
 
-    const location = useLocation()
-    const stateData = location.state
+    // const location = useLocation()
+    // const stateData = location.state
 
-    const users = stateData["users"]
-    const user = stateData["user"]
-    const user2 = stateData["user2"]
+    // const users = stateData["users"]
+    // const user = stateData["user"]
+    // const user2 = stateData["user2"]
     
 
 
     return (
     <div className="details">
-        <nav className="navbar3">
-            <ul>
-                <li ><Link className="title" to="/">TftBattle</Link> </li>
-            </ul>
-        </nav>
-        <nav className="navbar2">
-          <ul>
-            <Link to="denemece1" state = {{user: user, users: users, user2: user2}}>Avarege gold</Link>
-            <Link to="denemece2" state = {{user: user, users: users, user2: user2}}>Denemece2</Link>
-          </ul>
-        </nav>
-        <div className="detailsMain" >
-          <Outlet/>
-        </div>
+      <h2>Will be online soon...</h2>
+      <Link to ={{pathname:"/"}}><button className="compare-btn">Back To the Main Page</button></Link>
+    {/* //     <nav className="navbar3">
+    //         <ul>
+    //             <li ><Link className="title" to="/">TftBattle</Link> </li>
+    //         </ul>
+    //     </nav>
+    //     <nav className="navbar2">
+    //       <ul>
+    //         <Link to="denemece1" state = {{user: user, users: users, user2: user2}}>Avarege gold</Link>
+    //         <Link to="denemece2" state = {{user: user, users: users, user2: user2}}>Denemece2</Link>
+    //       </ul>
+    //     </nav>
+    //     <div className="detailsMain" >
+    //       <Outlet/>
+    //     </div> */}
     </div>
     
 )
